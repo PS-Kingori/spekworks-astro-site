@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Counter from "../components/Counter"
+import Body from "../components/Body.jsx"
+import IndexBody2 from "../components/IndexBody2"
+import IndexBody3 from "../components/IndexBody3"
+---
+
+<Layout>
+
+  <section>
+  <div class="container mx-auto">
+  <Counter client:load />
+
+  </section>
+	
+ 
+  <Body client:load />
+  
+  <IndexBody2 client:load />
+
+  <IndexBody3 client:load />
+
+</div>
+
+
+</div>
+	
+</Layout>
