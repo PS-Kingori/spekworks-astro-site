@@ -17,7 +17,7 @@ export default function Body() {
        
  <div class="container mx-auto pt-32 px-16">
   <div class="text-center">
-  <h2 class="text-4xl md:text-5xl font-bold mb-4 ">Why Work with us</h2>
+  <h2 class="text-4xl md:text-5xl font-bold mb-4 ">Contact Us</h2>
 
   <div class="pt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class=" h-[500px]">

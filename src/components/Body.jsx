@@ -15,7 +15,7 @@ export default function Body() {
       
     >
        
-  <div class="container mx-auto pt-32">
+  <div class="container mx-auto pt-32 px-16">
   <div class="text-center">
   <h2 class="text-4xl md:text-5xl font-bold mb-4 ">What we do</h2>
   <div class="text-center py-12 px-20">
