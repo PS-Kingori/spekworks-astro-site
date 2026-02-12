@@ -15,21 +15,36 @@ export default function Body() {
       
     >
        
- <div class="container mx-auto pt-32 px-16">
-  <div class="text-center">
-  <h2 class="text-4xl md:text-5xl font-bold mb-4 ">Contact Us</h2>
+ <div class="bg-yellow-500 container mx-auto py-16 px-16 my-6">
 
-  <div class="pt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
-  <div class=" h-[500px]">
-    <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop" class="w-full h-full object-cover " />
+
+   <section class="flex flex-col md:flex-row items-center gap-12 py-20">
+
+ <div class="md:w-1/2 px-20 flex flex-col items-center gap-6">
+
+  <div class="md:text-2xl font-semibold flex items-center gap-4">
+    📍
+    <span>Nairobi, Kenya</span>
   </div>
-  <div class=" h-[500px]">
-    <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop" class="w-full h-full object-cover " />
+
+  <div class="md:text-2xl font-semibold flex items-center gap-4">
+    📞
+    <span>+254 712 345 678</span>
   </div>
-  
-  
-  
+
+  <div class="md:text-2xl font-semibold flex items-center gap-4">
+    ✉️
+    <span>info@example.com</span>
   </div>
+
+</div>
+
+    <div class="md:w-1/2 ">
+    <h2 class="text-center text-4xl md:text-5xl font-bold leading-relaxed">
+      Have a project <br />Reach out to us
+    </h2>
+  </div>
+    </section>
   </div >
 
   
@@ -37,7 +52,7 @@ export default function Body() {
 
 
   
-</div>
+
 
   
     </motion.div>
