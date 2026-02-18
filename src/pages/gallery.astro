@@ -1,13 +1,54 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import GalleryTabs from "../components/GalleryTabs"
+import GalleryGrid from "../components/GalleryGrid"
+
+const residentialProjects: [string, string][] = Object.entries(import.meta.glob('../assets/gallery/residential/*/*.{jpg,jpeg,png,webp}', {
+  eager: true,
+  import: 'default'
+})) as [string, string][]; // Type assertion
+
+const commercialProjects: [string, string][] = Object.entries(import.meta.glob('../assets/gallery/commercial/*/*.{jpg,jpeg,png,webp}', {
+  eager: true,
+  import: 'default'
+})) as [string, string][]; // Type assertion
+
+
+const createProjectStructure = (projectEntries: [string, string][]) => {
+  // Define the type for the projects object
+  const projects: Record<string, string[]> = {};
+
+  projectEntries.forEach(([path, image]) => {
+    const projectName = path.split('/')[4]; // Adjust according to your structure
+    if (!projects[projectName]) {
+      projects[projectName] = [];
+    }
+    projects[projectName].push(image);
+  });
+
+  return projects;
+};
+
+const residentialImagesByProject = createProjectStructure(residentialProjects);
+const commercialImagesByProject = createProjectStructure(commercialProjects);
+
+
+
+const residentialImages2 = Object.values(residentialImagesByProject)
+
+
+
+// console.log('First image:', residentialImagesByProject  );
+// console.log('First image:', residentialImages2)
+
 ---
 
 <Layout>
-	<div class="">
-		<h1>
-		Astrolayout
-	</h1>
+<div class="py-16"></div>
+	<GalleryGrid 
+	client:load
+	residential={residentialImagesByProject} 
+  commercial={commercialImagesByProject}
+	/>
 
-	</div>
-	
 </Layout>

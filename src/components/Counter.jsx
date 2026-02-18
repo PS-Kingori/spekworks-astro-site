@@ -20,7 +20,7 @@ const Slider = () => {
 
   return (
     <motion.div
-    initial={{ opacity: 0, y: 50 }}   // starting state
+    initial={{ opacity: 0.85, y: 50 }}   // starting state
       animate={{ opacity: 1, y: 0 }}    // target state
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
