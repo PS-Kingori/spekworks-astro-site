@@ -13,6 +13,16 @@ const commercialProjects: [string, string][] = Object.entries(import.meta.glob('
   import: 'default'
 })) as [string, string][]; // Type assertion
 
+const hospitalityProjects: [string, string][] = Object.entries(import.meta.glob('../assets/gallery/hospitality/*/*.{jpg,jpeg,png,webp}', {
+  eager: true,
+  import: 'default'
+})) as [string, string][]; // Type assertion
+
+const religiousProjects: [string, string][] = Object.entries(import.meta.glob('../assets/gallery/religious/*/*.{jpg,jpeg,png,webp}', {
+  eager: true,
+  import: 'default'
+})) as [string, string][]; // Type assertion
+
 
 const createProjectStructure = (projectEntries: [string, string][]) => {
   // Define the type for the projects object
@@ -31,6 +41,8 @@ const createProjectStructure = (projectEntries: [string, string][]) => {
 
 const residentialImagesByProject = createProjectStructure(residentialProjects);
 const commercialImagesByProject = createProjectStructure(commercialProjects);
+const hospitalityImagesByProject = createProjectStructure(hospitalityProjects);
+const religiousImagesByProject = createProjectStructure(religiousProjects);
 
 
 
@@ -45,10 +57,15 @@ const residentialImages2 = Object.values(residentialImagesByProject)
 
 <Layout>
 <div class="py-16"></div>
+<div class="text-center font-bold text-5xl">
+  <h2>Our Gallery</h2>
+</div>
 	<GalleryGrid 
 	client:load
 	residential={residentialImagesByProject} 
   commercial={commercialImagesByProject}
+  hospitality={hospitalityImagesByProject}
+  religious={religiousImagesByProject}
 	/>
 
 </Layout>

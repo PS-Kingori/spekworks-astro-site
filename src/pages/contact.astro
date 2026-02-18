@@ -7,14 +7,15 @@ import Layout from "../layouts/Layout.astro"
   <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
 
     <!-- LEFT: Image / Icon -->
-    <div class="md:w-1/2 flex justify-center md:justify-start">
+    <div class="px-40 md:w-1/2 flex justify-center md:justify-start">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
-           class="w-40 h-40 text-blue-600">
+           class="w-40 h-40 text-yellow-500">
         <path stroke-linecap="round" stroke-linejoin="round" 
               d="M16 12H8m8 0l-4-4m4 4l-4 4" />
       </svg>
     </div>
+    
 
     <!-- RIGHT: Contact Info -->
     <div class="md:w-1/2 flex flex-col gap-6">
@@ -28,12 +29,16 @@ import Layout from "../layouts/Layout.astro"
       <!-- Contact Details -->
       <ul class="flex flex-col gap-4 text-gray-700 text-lg">
         <li class="flex items-center gap-3">📍 Nairobi, Kenya</li>
-        <li class="flex items-center gap-3">📞 +254 712 345 678</li>
-        <li class="flex items-center gap-3">✉️ info@example.com</li>
+        <li class="flex items-center gap-3">📞 +254 728 322 582</li>
+        <li class="flex items-center gap-3">✉️ plalkisang@gmail.com</li>
+        <button class=" bg-yellow-500 text-black py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+            <a href="mailto:plalkisang@gmail.com">Email us </a>
+          </button>
       </ul>
     </div>
 
   </div>
+  
 </section>
 
 	

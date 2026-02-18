@@ -48,7 +48,7 @@ const Slider = () => {
           At Spekworks we are Transforming spaces and Elevating lives.
           </p>
           <button className="inline-block bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
-            Learn More
+            <a href="/about">Learn More</a>
           </button>
         </div>
       </div>

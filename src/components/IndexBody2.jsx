@@ -23,10 +23,10 @@ export default function Body() {
 
   <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
   {[
-    { img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop", title: "Design", href: "/design" },
-    { img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop", title: "Development", href: "/dev" },
-    { img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop", title: "Branding", href: "/branding" },
-    { img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop", title: "Strategy", href: "/strategy" },
+    { img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "Architecture Services", href: "/services#architecture" },
+    { img: "https://images.unsplash.com/photo-1633109870201-318921e3f992?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "Interior Design Services ", href: "/services#interior" },
+    { img: "https://images.unsplash.com/photo-1617720356637-6264c1c0b4bb?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: " Project Management Services ", href: "/services#pm-services" },
+    { img: "https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title: "Landscape-design", href: "/services#landscape-design" },
   ].map((item) => (
     
 <a

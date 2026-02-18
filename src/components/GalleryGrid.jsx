@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const GalleryGrid = ({ residential, commercial }) => {
+const GalleryGrid = ({ residential, commercial, hospitality, religious }) => {
     const [selectedCategory, setSelectedCategory] = useState('residential');
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
@@ -8,6 +8,8 @@ const GalleryGrid = ({ residential, commercial }) => {
     const categories = {
         residential,
         commercial,
+        hospitality,
+        religious
     };
 
     const currentImages = categories[selectedCategory] || [];
@@ -36,7 +38,7 @@ const GalleryGrid = ({ residential, commercial }) => {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
 
-console.log('Commercial Data:', commercial);
+console.log('Commercial Data:', religious);
 
     return (
         <div className="container mx-auto p-8">
