@@ -25,11 +25,11 @@ export default function Body() {
   </div>
 
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="md:col-span-2 h-[500px]">
+  <div class="hidden md:grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="md:col-span-2 h-[500px] aspect-w-16 aspect-h-9">
     <img 
       src="/2.jpg" 
-      class="w-full h-full object-cover" 
+      class="w-full h-full inset-0 object-cover" 
       alt="Gikambura Residence"
     />
   </div>
