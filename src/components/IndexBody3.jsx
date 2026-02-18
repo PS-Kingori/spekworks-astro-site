@@ -30,7 +30,7 @@ export default function Body() {
   
   <div class="md:w-1/2">
       <div class="">
-    <div class="grid grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
       <div class="text-center">
         <div class="">
