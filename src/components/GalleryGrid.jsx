@@ -42,7 +42,7 @@ const GalleryGrid = ({ residential, commercial, hospitality, religious }) => {
 
     return (
         <div className="container mx-auto p-8">
-            <div className="lg:justify-center lg:flex mb-8 py-10">
+            <div className="flex flex-col lg:flex-row lg:justify-center lg:flex mb-8 py-10">
                 {Object.keys(categories).map((category) => (
                     <button
                         key={category}
