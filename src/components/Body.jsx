@@ -27,12 +27,13 @@ export default function Body() {
   </div>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
   <div class="md:col-span-2 h-[500px]">
-    <img src="https://images.unsplash.com/photo-1633109870201-318921e3f992?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover " />
+    <img 
+    src="/src/assets/gallery/residential/Gikambura Residence/2.jpg" />
   </div>
 
   <div class="flex flex-col gap-4 h-[500px]">
-    <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop" class="h-1/2 object-cover " />
-    <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1631&auto=format&fit=crop" class="h-1/2 object-cover " />
+    <img src="/src/assets/gallery/commercial/Proposed Mixed use Development in Rwanda/thumb.jpg" class="h-1/2.5 object-cover " />
+    <img src="/src/assets/gallery/hospitality/Wedding-Parlour/thumb.jpg" class="h-1/2.5 object-cover " />
   </div>
   
 </div>

@@ -38,7 +38,7 @@ const GalleryGrid = ({ residential, commercial, hospitality, religious }) => {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
 
-console.log('Commercial Data:', religious);
+// console.log('Commercial Data:', religious);
 
     return (
         <div className="container mx-auto p-8">
