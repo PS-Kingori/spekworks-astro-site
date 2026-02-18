@@ -28,15 +28,15 @@ export default function Body() {
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
   <div class="md:col-span-2 h-[500px]">
     <img 
-      src="/src/assets/gallery/residential/Gikambura Residence/2.jpg" 
+      src="/2.jpg" 
       class="w-full h-full object-cover" 
       alt="Gikambura Residence"
     />
   </div>
 
   <div class="grid grid-cols-1 gap-2"> 
-    <img src="/src/assets/gallery/commercial/Proposed Mixed use Development in Rwanda/thumb.jpg" class="h-[250px] object-cover" alt="Proposed Mixed Use Development in Rwanda" />
-    <img src="/src/assets/gallery/hospitality/Wedding-Parlour/thumb.jpg" class="h-[250px] object-cover" alt="Wedding Parlour" />
+    <img src="/thumb.jpg" class="h-[250px] object-cover" alt="Proposed Mixed Use Development in Rwanda" />
+    <img src="/thumb copy.jpg" class="h-[250px] object-cover" alt="Wedding Parlour" />
   </div>
 </div>
 

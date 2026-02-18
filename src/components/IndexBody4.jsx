@@ -22,17 +22,17 @@ export default function Body() {
 
  <div class="md:w-1/2 px-20 flex flex-col items-center gap-6">
 
-  <div class="md:text-2xl font-light flex items-center gap-4">
+  <div class="md:text-2xl font-medium flex items-center gap-4">
     📍
     <span>Nairobi, Kenya</span>
   </div>
 
-  <div class="md:text-2xl font-light flex items-center gap-4">
+  <div class="md:text-2xl font-medium flex items-center gap-4">
     📞
     <span>+254 728 322 582</span>
   </div>
 
-  <div class="md:text-2xl font-light flex items-center gap-4">
+  <div class="md:text-2xl font-medium flex items-center gap-4">
     ✉️
     <span>plalkisang@gmail.com</span>
   </div>
