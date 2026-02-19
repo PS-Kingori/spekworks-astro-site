@@ -40,11 +40,11 @@ const Slider = () => {
 
       {/* Text content */}
       <div className="relative z-19 flex h-full items-center  px-6">
-        <div className="max-w-2xl px-8 md:px-16 text-white">
+        <div className="max-w-2xl px-8 md:px-16 text-white text-center sm:text-left">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Innovative Design
           </h1>
-          <p className="text-lg md:text-xl mb-8 opacity-90">
+          <p className="text-lg md:text-xl mb-8 opacity-90 font-semibold">
           At Spekworks we are Transforming spaces and Elevating lives.
           </p>
           <button className="inline-block bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
