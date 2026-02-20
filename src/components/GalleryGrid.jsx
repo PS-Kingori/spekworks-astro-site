@@ -4,19 +4,14 @@ const GalleryGrid = ({ residential, commercial, hospitality, religious }) => {
     const [selectedCategory, setSelectedCategory] = useState('residential');
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
+    const [isLoading, setIsLoading] = useState(true); // Loading state
 
-    const categories = {
-        residential,
-        commercial,
-        hospitality,
-        religious
-    };
-
+    const categories = { residential, commercial, hospitality, religious };
     const currentImages = categories[selectedCategory] || [];
-  
+
     const imageArray = Object.entries(currentImages).map(([projectName, images]) => [
         projectName,
-        images.map(image => image.src), 
+        images.map(image => image.src),
     ]);
 
     const handleImageClick = (imageSrc) => {
@@ -38,10 +33,27 @@ const GalleryGrid = ({ residential, commercial, hospitality, religious }) => {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
 
-// console.log('Commercial Data:', religious);
+    // Set loading state to false after images have loaded
+    useEffect(() => {
+        const allImages = imageArray.flatMap(([, images]) => images);
+        let loadedImages = 0;
+
+        allImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+            img.onload = () => {
+                loadedImages += 1;
+                if (loadedImages === allImages.length) {
+                    setIsLoading(false); // Set loading to false when all images are loaded
+                }
+            };
+        });
+    }, [imageArray]);
 
     return (
         <div className="container mx-auto p-8">
+            {isLoading && <div className="loader">Loading...</div>} {/* Loader Display */}
+
             <div className="flex flex-col lg:flex-row lg:justify-center lg:flex mb-8 py-10">
                 {Object.keys(categories).map((category) => (
                     <button
@@ -68,6 +80,7 @@ const GalleryGrid = ({ residential, commercial, hospitality, religious }) => {
                                     alt={projectName}
                                     className="w-auto h-40 object-cover cursor-pointer"
                                     onClick={() => handleImageClick(image)}
+                                    loading="lazy" // Lazy load images
                                 />
                             ))}
                         </div>
