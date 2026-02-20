@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .divider {
     display: flex; /* Use flexbox to center the hr */
     justify-content: center; /* Center horizontally */
