@@ -1,4 +1,5 @@
 import React from 'react'
+import WhatsappButton from './WhatsappButton'
 
 const Footer = () => {
   return (
@@ -31,11 +32,13 @@ const Footer = () => {
     <div class="md:w-1/4">
       <h3 class="font-semibold mb-4">Contact Us</h3>
       <ul class="space-y-2 text-gray-300">
-        <li class="flex items-center gap-2">📍 Nairobi, Kenya</li>
+        {/* <li class="flex items-center gap-2">📍 Nairobi, Kenya</li>
         <li class="flex items-center gap-2">📞 (Mobile 1)+254 728 322 582</li>
          <li class="flex items-center gap-2">📞 (Mobile 2)+254 700 772 212</li>
-          <li class="flex items-center gap-2">📞 (Mobile 3)+254 729 233 123</li>
-        <li class="flex items-center gap-2">✉️ plalkisang@gmail.com</li>
+          <li class="flex items-center gap-2">📞 (Mobile 3)+254 729 233 123</li> */}
+          <li>     <WhatsappButton className="py-3 px-6 text-xl" />
+          </li>
+        {/* <li class="flex items-center gap-2">✉️ plalkisang@gmail.com</li> */}
       </ul>
     </div>
 

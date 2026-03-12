@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import { Button } from "@/components/ui/button"
+import TooltipButton from "@/components/TooltipButton"
+import WhatsappButton from "@/components/WhatsappButton"
 ---
 
 import Layout from "../layouts/Layout.astro";
@@ -30,13 +33,16 @@ import Layout from "../layouts/Layout.astro";
         <!-- Contact Details -->
         <ul class="flex flex-col gap-3 text-gray-700 text-base sm:text-lg">
           <li class="flex items-center gap-3">📍 Nairobi, Kenya</li>
-          <li class="flex items-center gap-3">📞 +254 728 322 582</li>
+          <!-- <li class="flex items-center gap-3">📞 +254 728 322 582</li> -->
+          <li>	 <WhatsappButton client:load />
+</li>
           <li class="flex items-center gap-3">✉️ plalkisang@gmail.com</li>
           <button class="bg-yellow-500 text-black py-2 rounded-full font-semibold hover:bg-gray-200 transition">
             <a href="mailto:plalkisang@gmail.com">Email us</a>
           </button>
         </ul>
       </div>
+
 
     </div>
 	</section>

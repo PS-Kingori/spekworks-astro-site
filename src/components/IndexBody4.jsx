@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import WhatsappButton from "./WhatsappButton";
 
 export default function Body() {
   return (
@@ -15,35 +16,28 @@ export default function Body() {
       
     >
        
- <div class="bg-yellow-500 container mx-auto py-16 px-16 my-6">
+ 
+
+  <div class="bg-yellow-500 container mx-auto py-16 px-16 my-6">
 
 
-   <section class="flex flex-col md:flex-row items-center gap-12 py-20">
+   <section class="flex flex-col items-center gap-12 py-20">
 
  <div class="md:w-1/2 px-20 flex flex-col items-center gap-6">
 
-  <div class="md:text-2xl font-medium flex items-center gap-4">
-    📍
-    <span>Nairobi, Kenya</span>
-  </div>
+  
 
-  <div class="md:text-2xl font-medium flex items-center gap-4">
-    📞
-    <span>+254 728 322 582</span>
-  </div>
-
-  <div class="md:text-2xl font-medium flex items-center gap-4">
-    ✉️
-    <span>plalkisang@gmail.com</span>
-  </div>
+ 
 
 </div>
 
     <div class="md:w-1/2 ">
-    <h2 class="text-center text-4xl md:text-5xl font-bold leading-relaxed">
+    <h2 class="text-center text-4xl md:text-5xl text-gray-900 font-bold leading-relaxed">
       Have a project <br />Reach out to us
     </h2>
   </div>
+     <WhatsappButton className="py-3 px-6 text-xl" />
+
     </section>
   </div >
 
