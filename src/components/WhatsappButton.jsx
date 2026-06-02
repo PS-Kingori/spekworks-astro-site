@@ -49,7 +49,7 @@ export default function WhatsappButton() {
         <TooltipTrigger asChild>
           
           <div className="flex flex-row gap-2 items-center  h-full">
-            <a href="https://www.whatsapp.com//">
+          <a href="https://wa.me/+254728322582" target="_blank" rel="noopener">
             <motion.div
                                     variants={buttonVariants}
                                     animate="pulse"
